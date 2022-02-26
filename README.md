@@ -1,2 +1,2 @@
 # dotfiles
-all dot files vim bas zsh
+all dot files vim bash zsh
