@@ -4,7 +4,7 @@ set autoindent
 "make tab use 4 spaces
 set tabstop=4
 set shiftwidth=4
-set expandtab
+"set expandtab  "enable this to use spaces instead of tab e.g in python
 
 call plug#begin()
 Plug 'ervandew/supertab'
