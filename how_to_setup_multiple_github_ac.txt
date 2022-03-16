@@ -1,0 +1,38 @@
+1.generate new keys by 
+ssh-keygen -t rsa -C "your_email@youremail1.com"
+ssh-keygen -t rsa -C "your_email@youremail2.com"
+
+2.add the public key (.pub) file to the github remote ssh key
+
+3.add the keys to the keyring
+ssh-add id_rsa1
+ssh-add id_rsa2
+
+4.check the keys
+ssh-add -l
+
+
+5.add the config to .ssh/config
+#activehacker account
+Host acc1
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_activehacker
+	IdentitiesOnly yes
+#jexchan account
+Host acc2
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_jexchan
+	IdentitiesOnly yes
+the imp point here is 
+acc1 -> git@github.com with identity of 1nd key
+acc2 -> git@github.com with identity of 2nd key
+
+now
+git clone acc2:any_private_repo.git
+will work
+
+6. verify with
+ssh -T acc1
+ssh -T acc2

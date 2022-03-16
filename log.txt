@@ -1,0 +1,23 @@
+add jj shortcut in vim vscode
+setup multiple github
+install nvm and setup node and npm (uninstall 17 install 16)
+https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/
+gnome-disk-utility
+sudo apt install zsh vim deluge xfce4-goodies gcc g++ git
+sudo apt install ./google-chrome.deb
+sudo add-apt-repository ppa:xuzhen666/dockbarx
+sudo apt-get update
+sudo apt-get install dockbarx xfce4-dockbarx-plugin
+download codium deb and install it and remove it (need to change extension source)
+install code from deb
+
+setup git ssh
+add a repo via gihub.com (important : dont initialize any readme or anything)
+git remote set origin git@github.com:abinashdash17/repo_name.git
+make a intial commit and push the changes
+add a .gitignore to any folder (preferably root . i.e place it where .git lives)
+ref:https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
+
+pending
+zsh setup
+wordpress child theme
