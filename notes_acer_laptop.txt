@@ -1,0 +1,28 @@
+setup virtualhost
+it didn't work
+using the subdir apparoch
+sudo chown prabin site2/ -R
+sudo chmod 755 site2/ -R
+
+sudo apt install mysql-server
+pass : asdfqwer
+sudo apt install php libapache2-mod-php php-mysql
+add 127.0.0.1 learnphp.test to /etc/hosts
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
+
+add an ini file in conf.d folder instead of changing the main config file
+30-learnphp.ini
+error_reporting = E_ALL
+display_errors = On
+
+sudo systemctl disable apache2
+sudo systemctl disable mysql
+
+sudo systemctl start apache2
+sudo systemctl start mysql
+
+
+install supertab,gutentag,StanAngeloff/php.vim
+ultisnips and Plugin 'honza/vim-snippets' for snippets and add a snippet
+install ctags,git
